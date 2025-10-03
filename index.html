@@ -166,7 +166,7 @@
 
         <h2>🌐 網路設備狀態報告</h2>
         <p class='version-info'>版本號：v4.3.2</p>
-        <p class='timestamp-info'>🕒 更新時間：2025-10-03 10:55:52</p>
+        <p class='timestamp-info'>🕒 更新時間：2025-10-03 11:00:50</p>
 
         <div class='overview-dashboard'>
             <div class='overview-header'>
@@ -175,17 +175,17 @@
             </div>
             <div class='overview-stats'>
                 <div class='stat-item'><span class='stat-label'>總設備數</span><div class='stat-value'>27</div></div>
-                <div class='stat-item'><span class='stat-label ok'>正常設備</span><div class='stat-value ok'>24</div></div>
-                <div class='stat-item'><span class='stat-label fail'>異常設備</span><div class='stat-value fail'>3</div></div>
+                <div class='stat-item'><span class='stat-label ok'>正常設備</span><div class='stat-value ok'>27</div></div>
+                <div class='stat-item'><span class='stat-label fail'>異常設備</span><div class='stat-value fail'>0</div></div>
             </div>
         </div>
 
         
-        <details class='location-details has-fail' open>
+        <details class='location-details ' >
             <summary class='summary-with-arrow'>
                 <span class='arrow-icon collapsed-arrow'><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></span>
                 <span class='arrow-icon expanded-arrow'><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span>
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fail"><path d="M12 22s-8-4-8-10a8 8 0 0 1 16 0c0 6-8 10-8 10z"/><circle cx="12" cy="10" r="3"/><line x1="12" y1="12" x2="12" y2="12.01"/><line x1="12" y1="16" x2="12" y2="16.01"/></svg> 地點：電梯梯間(主線路)
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ok"><path d="M12 22s-8-4-8-10a8 8 0 0 1 16 0c0 6-8 10-8 10z"/><circle cx="12" cy="10" r="3"/></svg> 地點：電梯梯間(主線路)
             </summary>
             
             <details data-category-status='' >
@@ -212,40 +212,40 @@
                 </ul>
             </details>
             
-            <details data-category-status='has-fail' open>
+            <details data-category-status='' >
                 <summary class='summary-with-arrow'>
                     <span class='arrow-icon collapsed-arrow'><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></span>
                     <span class='arrow-icon expanded-arrow'><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></span>
                     <div class='status-bubbles'>
+                        <div class='status-bubble ok'>3</div>
                         
-                        <div class='status-bubble fail'>3</div>
                     </div>
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
                     <span class='category-title'>類別：Firewall</span>
                 </summary>
                 <ul>
                     
-                    <li class='fail'>
-                        <span class='status-dot fail'></span>
+                    <li class='ok'>
+                        <span class='status-dot ok'></span>
                         <div class='device-info-block'>
                             <span class='device-name'>FortiGate 50F to Hinet-1</span>
-                            <span class='device-meta'>(172.16.150.1) &mdash; Ping Failed (3 retries)</span>
+                            <span class='device-meta'>(172.16.150.1) &mdash; HTTPS:200</span>
                         </div>
                     </li>
                     
-                    <li class='fail'>
-                        <span class='status-dot fail'></span>
+                    <li class='ok'>
+                        <span class='status-dot ok'></span>
                         <div class='device-info-block'>
                             <span class='device-name'>FortiGate 50F to Hinet-2</span>
-                            <span class='device-meta'>(172.16.200.1) &mdash; Ping Failed (3 retries)</span>
+                            <span class='device-meta'>(172.16.200.1) &mdash; HTTPS:200</span>
                         </div>
                     </li>
                     
-                    <li class='fail'>
-                        <span class='status-dot fail'></span>
+                    <li class='ok'>
+                        <span class='status-dot ok'></span>
                         <div class='device-info-block'>
                             <span class='device-name'>FortiGate 60F</span>
-                            <span class='device-meta'>(10.10.100.1) &mdash; Ping Failed (3 retries)</span>
+                            <span class='device-meta'>(10.10.100.1) &mdash; HTTPS:200</span>
                         </div>
                     </li>
                     
@@ -744,8 +744,8 @@
                     <span class='threshold-info'>(閾值: 警告 > 70%, 錯誤 > 90%)</span>
                 </div>
                 <div class='resource-item detailed' data-resource="mem">
-                    <div class='resource-label-row'><span class='resource-label'>記憶體使用率:</span><span class='resource-value-text ok'>42.5% (OK)</span></div>
-                    <div class='progress-container'><div class='progress-bar ok' style='width: 42.5%;'><span>42.5%</span></div></div>
+                    <div class='resource-label-row'><span class='resource-label'>記憶體使用率:</span><span class='resource-value-text ok'>42.3% (OK)</span></div>
+                    <div class='progress-container'><div class='progress-bar ok' style='width: 42.3%;'><span>42.3%</span></div></div>
                     <span class='threshold-info'>(閾值: 警告 > 70%, 錯誤 > 90%)</span>
                 </div>
                 <div class='resource-item detailed' data-resource="disk">
